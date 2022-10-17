@@ -1,17 +1,16 @@
-﻿using Unity.LEGO.Game;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Unity.LEGO.Gameplay
 {
     public class GroundHazard : MonoBehaviour
     {
-        void OnTriggerEnter(Collider other) 
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        void Update(Collider other) 
         {
             if(other.gameObject.CompareTag("Player"))
             {
-                GameOverEvent evt = Events.GameOverEvent;
-                evt.Win = false;
-                EventManager.Broadcast(evt);
+                SceneManager.LoadScene(nextSceneIndex);
             }
         }
     }
