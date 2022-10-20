@@ -19517,6 +19517,7 @@ GameObject:
   - component: {fileID: 7020889713911445372}
   - component: {fileID: 3308710995363840937}
   - component: {fileID: 6711376249849742330}
+  - component: {fileID: 7249557011825704204}
   m_Layer: 0
   m_Name: CarObstacle (1)
   m_TagString: Untagged
@@ -19856,6 +19857,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5884344, y: 0.5776031, z: 0.19976227}
   m_Center: {x: -0.015316295, y: 0.025372732, z: 0.48504388}
+--- !u!54 &7249557011825704204
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648490214080572870}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &7658259273080473317
 GameObject:
   m_ObjectHideFlags: 0
