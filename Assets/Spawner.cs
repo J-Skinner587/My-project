@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject Prefab1;
+
     void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+    {   
+        if(other.name == "Spawner")
         {
-            return;
-        }
-        if (other.gameObject.CompareTag("Collider"))
-        {
-            return;
-        }
-        else
-        {
-            other.gameObject.SetActive(true);
+            Prefab1.SetActive(true);
         }
     }
 }

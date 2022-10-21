@@ -16,7 +16,7 @@ public class DestroyObject : MonoBehaviour
         }
         else
         {
-            other.gameObject.SetActive(false); 
+            other.gameObject.SetActive(false);
         }
     }
 }
