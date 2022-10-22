@@ -9,6 +9,7 @@ TagManager:
   - Chaser
   - Collider
   - Prefab1
+  - Spawner
   layers:
   - Default
   - TransparentFX
